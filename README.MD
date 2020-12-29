@@ -1,22 +1,22 @@
 # HOW TO RUN THE PROJECT?
 
-## CLONE THE REPO
-git clone 
+### CLONE THE REPO
+git clone https://github.com/akamell/BlogEngineApi.git
 
-## INIT USER SECRETS TO DEV ENV
+### INIT USER SECRETS TO DEV ENV
 dotnet user-secrets init
 dotnet user-secrets set "BlogEngine:ConnectionString": "Data Source=myHost;database=MyDatabase;user=myUser;pwd=myPassword;Min Pool Size=5;Max Pool Size=25;Connection Reset=True;Connection Lifetime=300;Convert Zero Datetime=True;"
 
-## INSTALL DOTNET EF TOOL
+### INSTALL DOTNET EF TOOL
 dotnet tool install --global dotnet-ef
 
-## EXECUTE MIGRATIONS
+### EXECUTE MIGRATIONS
 dotnet ef database update
 
-## RUN
+### RUN
 dotnet run 
 
-# For authentication
+# API Doc
 POST https://localhost:5001/user/login
 
 If you want to be a Writer user, you must send the following as a payload
