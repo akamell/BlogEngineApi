@@ -17,7 +17,7 @@ dotnet ef database update
 dotnet run 
 
 # API Doc
-POST https://localhost:5001/user/login
+``` POST https://localhost:5001/user/login
 
 If you want to be a Writer user, you must send the following as a payload
 {
@@ -28,6 +28,7 @@ or if you want to be a Editor
 {
     "UserName": "Editor"
 }
+```
 
 GET https://localhost:5001/post/pending-approve
 return all posts pending approval
@@ -38,6 +39,7 @@ return all approved posts
 GET https://localhost:5001/post/{id}
 return a post by id
 
+```
 POST https://localhost:5001/post
 {
 	"Content": "New Content"
@@ -55,6 +57,7 @@ PUT https://localhost:5001/post/{id}
     "Content": "New Content"
 }
 Update the content of post when the post was rejected, It's required send token as Write.
+```
 
 DELETE https://localhost:5001/post/{id}
 Delete a post, it's required send token as Editor.
