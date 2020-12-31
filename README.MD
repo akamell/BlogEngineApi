@@ -24,7 +24,7 @@ If you want to be a Writer user, you must send the following as a payload
 	"UserName": "Writer"
 }
 
-or if you want to be a Editor
+or if you want to be an Editor
 {
     "UserName": "Editor"
 }
